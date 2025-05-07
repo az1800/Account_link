@@ -1,0 +1,105 @@
+/* General Header Styling */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: rgba(91, 184, 255, 1);
+  position: relative;
+}
+
+.header-logo {
+  height: 3.5rem;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.mdb-btn {
+  font-weight: bold;
+  font-family: "Montserrat Alternates", sans-serif;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hide Desktop Buttons on Mobile */
+.header-buttons.hidden {
+  display: none;
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+  display: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(91, 184, 255, 1);
+  text-align: center;
+  padding: 1rem 0;
+  z-index: 1000;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+/* Header for sign up/ log in / chat pages */
+.SLHeader {
+  display: none;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  .SLHeader {
+    display: flex;
+    width: 100%;
+  }
+  .header-logo {
+    height: 2rem;
+  }
+  .header-buttons {
+    display: none; /* Hide desktop buttons by default */
+  }
+  .SLHeader-icon {
+    display: none;
+  }
+  .hamburger-icon {
+    display: block; /* Show hamburger menu icon */
+  }
+}
+@media (max-width: 480px) {
+  .SLHeader {
+    display: flex;
+    width: 100%;
+  }
+  .header-logo {
+    height: 1.5rem;
+  }
+  .header-buttons {
+    display: none; /* Hide desktop buttons by default */
+  }
+  .SLHeader-icon {
+    display: none;
+  }
+  .hamburger-icon {
+    display: block; /* Show hamburger menu icon */
+  }
+}

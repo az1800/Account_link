@@ -1,0 +1,86 @@
+/* English */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.left2 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+}
+/* .btns {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+} */
+
+.right2 {
+  background-color: rgba(91, 184, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+}
+.logInForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* margin: 1.5rem; */
+  width: 35rem;
+  margin-bottom: 10rem;
+}
+.ButtonGroupContainer {
+  margin-top: 6rem;
+}
+@media (max-width: 768px) {
+  .logInForm {
+    gap: 50px;
+    max-width: 25rem;
+  }
+  .ButtonGroupContainer {
+    max-width: 25rem;
+    margin-top: 12rem;
+  }
+
+  .right2 {
+    display: none;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .left2 {
+    max-height: 200vh;
+  }
+}
+@media (max-width: 480px) {
+  .right2 {
+    display: none;
+  }
+  .logInForm {
+    gap: 50px;
+    max-width: 25rem;
+  }
+  .ButtonGroupContainer {
+    max-width: 25rem;
+    margin-top: 12rem;
+  }
+  .container {
+    flex-direction: column-reverse;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* Arabic */

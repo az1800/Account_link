@@ -1,0 +1,64 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  margin: 0;
+}
+
+.left {
+  background-color: rgba(91, 184, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+}
+.signUpForm {
+  margin-top: -10rem;
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ButtonGroupContainer {
+  margin-top: 6rem;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    margin: 0;
+  }
+  .left {
+    display: none;
+  }
+  .right {
+    max-height: 200vh;
+  }
+  .signUpForm {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 25rem;
+  }
+  .ButtonGroupContainer {
+    max-width: 25rem;
+    margin-top: 12rem;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

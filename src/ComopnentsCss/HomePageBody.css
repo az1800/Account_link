@@ -1,0 +1,200 @@
+.PageBody {
+  margin-top: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh;
+  justify-content: flex-start;
+  z-index: -1;
+}
+
+/* Links: Home, About Us, Contact Us */
+.headerstuff {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.firstStatement {
+  font-family: Montserrat;
+  font-size: 5.5rem;
+  max-width: 40rem;
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+.firstStatement-Ar {
+  font-family: Montserrat;
+  font-size: 5.5rem;
+  max-width: 39rem;
+  margin-left: auto;
+  text-align: right;
+  margin-right: 10rem;
+  margin-bottom: 2rem;
+}
+.secondStatement {
+  font-family: Montserrat;
+  font-size: 2rem;
+  max-width: 47rem;
+  margin-left: 5rem;
+}
+.secondStatement-Ar {
+  font-family: Montserrat;
+  font-size: 2rem;
+  max-width: 47rem;
+
+  margin-left: auto;
+  margin-right: 10rem;
+  text-align: right;
+}
+
+.joinAsAnACCDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  height: 14rem;
+  width: 23rem;
+  margin-left: auto;
+  margin-top: -16rem;
+  margin-right: 14rem;
+  background-color: white;
+}
+.joinAsAnACCDiv-Ar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
+  height: 14rem;
+  width: 23rem;
+  margin-left: 8rem;
+  margin-top: -16rem;
+  /* margin-right: 14rem; */
+  background-color: white;
+}
+.joinAsAnACCBtn {
+  width: 90%;
+  height: 30%;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  background-color: black;
+}
+
+.joinAsAnACCText {
+  font-size: 1.8rem;
+}
+.twoButtons {
+  display: flex;
+  gap: 2rem;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  width: 41rem;
+}
+
+.twoButtons-Ar {
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+  margin-right: 8rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  width: 41rem;
+}
+/*Get Financial Solutions*/
+.btns {
+  width: 45%;
+}
+.responsiveImage {
+}
+
+/* Mobile View (max-width: 768px) */
+@media (max-width: 768px) {
+  .twoButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 0;
+    margin-top: 0rem;
+    width: 18rem;
+  }
+  .twoButtons-Ar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0rem;
+    width: 18rem;
+  }
+  /*Get Financial Solutions*/
+  .btns {
+    width: 100%;
+  }
+  .responsiveImage {
+    display: none;
+  }
+  .PageBody {
+    margin-top: 0.5rem;
+    background-color: rgba(91, 184, 255, 0.5);
+    display: flex;
+    flex-direction: column; /* Ensure column stacking */
+    justify-content: flex-start;
+    align-items: center; /* Center all content for smaller screens */
+  }
+
+  .headerstuff {
+    display: none; /* Hide the header links */
+  }
+
+  .firstStatement {
+    font-size: 3rem;
+    width: 20rem;
+    margin-left: 1rem; /* Adjust for smaller screens */
+    margin-top: 2rem;
+  }
+  .firstStatement-Ar {
+    font-size: 3rem;
+    max-width: 20rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .secondStatement {
+    font-family: Montserrat;
+    font-size: 1rem;
+    width: 20rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  .secondStatement-Ar {
+    font-family: Montserrat;
+    font-size: 1rem;
+    max-width: 20rem;
+    margin-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .joinAsAnACCDiv {
+    height: 12rem;
+    width: 20rem;
+    margin: 2rem auto; /* Proper spacing and centering below content */
+  }
+  .joinAsAnACCDiv-Ar {
+    height: 12rem;
+    width: 20rem;
+    margin: 2rem auto;
+  }
+  .joinAsAnACCText {
+    font-size: 1.5rem;
+  }
+}

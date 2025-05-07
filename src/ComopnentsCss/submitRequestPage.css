@@ -1,0 +1,66 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  margin: 0;
+}
+.SubmitRequestForm {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+  gap: 30px;
+}
+
+.SubmitRequestSection {
+  text-align: left;
+  width: 35rem;
+}
+.SubmitRequestSection-Ar {
+  text-align: right;
+  width: 35rem;
+}
+.firstLine {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.ResponsiveHeader {
+  display: none;
+}
+@media (max-width: 764px) {
+  .ResponsiveHeader {
+    display: flex;
+  }
+  .SubmitRequestSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .SubmitRequestSection-Ar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .SubmitRequestForm {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    gap: 30px;
+  }
+  .firstLine {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 70vh;
+    margin: 0;
+  }
+  .right2 {
+    display: none;
+  }
+}

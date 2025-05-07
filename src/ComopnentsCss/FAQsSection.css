@@ -1,0 +1,75 @@
+.FAQSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 30px;
+  padding: 0px 100px;
+}
+.FAQSection-Ar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 30px;
+  padding: 0px 100px;
+  direction: rtl;
+}
+.FAQSection-Ar > :nth-last-child(1) {
+  justify-self: end;
+}
+.FAQCard {
+  height: 180px;
+  width: 100%; /* Makes sure the FAQ item takes up full width within the grid */
+  max-width: 450px; /* Restricts the maximum width for readability */
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  opacity: 0; /* Initially hidden */
+  transform: rotateY(180deg); /* Start with a rotated state */
+  transition: opacity 1s ease-out, transform 0.5s ease-out; /* Flip and fade transition */
+  transform-style: preserve-3d;
+}
+.FAQCard.visible {
+  opacity: 1; /* Fully visible */
+  transform: rotateY(0);
+}
+.FAQText {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 764px) {
+  .FAQSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 20px;
+  }
+  .FAQSection-Ar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 20px;
+  }
+}
